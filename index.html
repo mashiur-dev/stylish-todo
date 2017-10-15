@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple ToDo</title>
+    <link rel="stylesheet" href="inc/style.css">
+</head>
+
+<body>
+    <header class="header_area">
+        <div class="header">
+            <h1>What ToDo</h1>
+            <h2>Remember, what next....</h2>
+            <div class="add_project">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <section class="add_form">
+        <div class="form">
+            <h2>Add project</h2>
+            <form action="">
+                <ul>
+                    <li>
+                        <input type="text" name="todo_title" class="todo_title" placeholder="Title *">
+                    </li>
+                    <li>
+                        <input type="date" name="todo_date" class="todo_date" placeholder="Date *">
+                    </li>
+                    <li>
+                        <textarea name="todo_description" class="todo_description" placeholder="Description"></textarea>
+                    </li>
+                    <li>
+                        <button id="submit">Add</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <section class="content_area">
+        <div class="content"></div>
+        <div class='nodata'></div>
+    </section>
+    <footer>
+        <h4>Developed with <img src="inc/heart2.png"> by <a href="">Mashiur Rahman</a></h4>
+    </footer>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <script src="inc/jquery.js"></script>
+    <script src="inc/main.js"></script>
+</body>
+
+</html>

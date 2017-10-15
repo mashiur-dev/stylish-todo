@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+*{margin:0;padding:0;}
+body{background:##ecf0f1;color:#2c3e50;font-family: 'Droid Sans', sans-serif; font-style: normal;font-size:16px;line-height:18px;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:normal; font-size:20px;}
+a{text-decoration:none;}
+.header, .form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 5px 10px;
+}
+.header_area {
+  background: #2ecc71 none repeat scroll 0 0;
+  color: #fff;
+  padding: 4px 0;
+}
+.header {
+  border-left: 4px solid #0e6755;
+  position: relative;
+}
+.header > h1 {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 1px #0e6755;
+  text-transform: uppercase;
+}
+.header > h2 {
+    font-size: 13px;
+}
+.add_project {
+  margin-top: -10px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+}
+
+.add_project > span {
+  background: #afedca url("add.png") no-repeat scroll 9px 8px / 22px auto;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 9px 20px;
+}
+.add_project.close > span {
+  background: #afedca url("down.png") no-repeat scroll 9px 13px / 22px auto;
+}
+.add_project.close {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.add_form {
+  background: #ecf0f1 none repeat scroll 0 0;
+  display: none; /*as default*/
+  /*margin-left: 500px; as default*/
+}
+.form > h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.form ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.form ul li {
+  margin: 8px 0;
+  width: 100%;
+}
+
+.form ul li input, .form ul li textarea, div.form ul li input.todo_date {
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 1px 2px;
+  font-size: 14px;
+  padding: 6px 0;
+  width: 98%;
+}
+.form button {
+    background: #2ecc71 none repeat scroll 0 0;
+    border: 0 solid;
+    color: #0e6755;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+    text-shadow: 0 1px 1px #ddd;
+    width: 98%;
+    cursor: pointer;
+}
+
+.single_todo > .btns button {
+  border: 0 solid;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 4px 20px;
+  cursor: pointer;
+}
+.form ul li textarea {
+  border-bottom: 2px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 8px 0;
+  width: 98%;
+}
+
+.single_todo > .title, .single_todo > p {
+  padding: 0 12px;
+}
+.single_todo > .title, .single_todo > p, .single_todo > .btns {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 600px;
+}
+.title {
+  margin-bottom: 5px;
+}
+.single_todo > .title > h1 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+.single_todo > h3 {
+    font-size: 12px;
+    line-height: 14px;
+}
+.single_todo > p {
+  font-size: 13px;
+  line-height: 16px;
+}
+.single_todo {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.single_todo > .title > span {
+  background: #ddd none repeat scroll 0 0;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 10px;
+  padding: 1px 5px;
+  text-align: center;
+}
+.single_todo > .btns {
+  margin-top: 10px;
+  text-align: right;
+}
+.single_todo > .btns button {
+  border: 0 solid;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 4px 20px;
+}
+.single_todo .btn-done {
+    background: #2ecc71 none repeat scroll 0 0;
+}
+.single_todo .btn-remove {
+    background: #e74c3c none repeat scroll 0 0;
+}
+
+.single_todo.done .title, .single_todo.done p {
+  color: #7f8c8d;
+  text-decoration: line-through;
+}
+
+.nodata > h3 {
+    color: #dd5044;
+    display: block;
+    font-size: 13px;
+    margin: 18px auto;
+    max-width: 581px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+/*loader*/
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+     z-index: 99;
+    height: 100%;
+ }
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(loader.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
+/*loader*/
+
+footer {
+  background: #2c3e50 none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+footer h4 {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+footer h4 img {
+  margin-bottom: -6px;
+  width: 18px;
+}
+footer h4 a {
+  color: #2ecc71;
+}
